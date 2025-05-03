@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Container_Flex as Container_Flex } from '../../styles/globals';
 
+type ImageContainerProps = {
+  backgroundImage: string;
+};
+
 export const Container = styled(Container_Flex)`
   gap: 5rem;
   padding: 1rem 4rem 0 4rem;
@@ -12,17 +16,17 @@ export const Container = styled(Container_Flex)`
   }
 `;
 
-export const ImageContainer = styled.div`
-  img {
-    width: 35rem;
-    height: 47rem;
-  }
+export const ImageContainer = styled.div<ImageContainerProps>`
+  width: 350rem;
+  height: 47rem;
+
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
+  background-position: center;
 
   @media (max-width: 1024px) {
-    img {
-      width: 100vw;
-      height: 100vh;
-    }
+    width: 100vw;
+    height: 100vh;
   }
 `;
 

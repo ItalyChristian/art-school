@@ -64,6 +64,8 @@ export const Button = styled.button<MenuVisible>`
     > svg {
       width: 2.5rem;
       height: 2.5rem;
+      
+      color: var(--main-red);
     }
   `}
 `;
