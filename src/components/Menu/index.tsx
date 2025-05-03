@@ -13,28 +13,37 @@ export type MenuProps = {
 }
 
 export const Menu = ({ links }: MenuProps) => {
-
     const text = "Escola de Artes";
     const link = "https://victorious.fandom.com/pt-br/wiki/Hollywood_Arts_High_School";
-
     const [visible, setVisible] = useState<boolean>(false);
-
+  
     return (
+      <>
         <S.Container>
-            <S.Button
-                visible={visible}
-                onClick={() => setVisible(true)}
-                aria-label="Abrir/Fechar menu"
-            >
+            <div>
                 {visible ? (
-                    <IoCloseSharp aria-label="Fechar menu" />
+                    <S.Button onClick={() => setVisible(false)} aria-label="Fechar menu">
+                        <IoCloseSharp />
+                    </S.Button>
                 ) : (
-                    <IoMenu aria-label="Abrir menu" />
+                    <S.Button visible={visible} onClick={() => setVisible(true)} aria-label="Abrir menu">
+                        <IoMenu aria-label="Abrir menu" />
+                    </S.Button>
                 )}
-            </S.Button>
-
-            <MenuLogo text={text} link={link} />
-            <NavLinks links={links} />
+            </div>
+  
+            <S.Content>
+                <MenuLogo text={text} link={link} />
+                <NavLinks links={links} />
+            </S.Content>
         </S.Container>
+  
+        {/* MENU MOBILE */}
+        {visible && (
+          <S.MenuMobileContainer>
+            <NavLinks links={links} />
+          </S.MenuMobileContainer>
+        )}
+      </>
     );
 };
