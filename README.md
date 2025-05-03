@@ -1,5 +1,5 @@
 # art-school
-Projeto Fictício de uma Escola de Artes
+Projeto site de uma Escola de Artes (fictício)
 
 Linguagens e ferramentas utilizadas: React.js, Next.js, Typescript, styled-components, zod
 
