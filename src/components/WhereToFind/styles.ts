@@ -36,8 +36,9 @@ export const Content = styled.div`
   }
 `;
 
-export const Item = styled.p`
+export const Item = styled.a`
   max-width: 80%;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     max-width: 90%;

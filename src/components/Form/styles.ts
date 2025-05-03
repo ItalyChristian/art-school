@@ -1,7 +1,16 @@
 import styled from "styled-components";
 
-export const TableForm = styled.form`
-  min-width: 40rem;
+export const Container = styled.form`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 3rem;
+`;
+
+export const TableForm = styled.div`
+  min-width: 50rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;

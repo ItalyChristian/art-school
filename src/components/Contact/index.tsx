@@ -7,9 +7,8 @@ export const Contact = () => {
     return (
         <S.Container>
             <S.TitleContainer>
-                <h2>Contato</h2>
                 <h1>Dúvidas?</h1>
-                <h3>Pergunte o que quiser.</h3>
+                <h2>Pergunte o que quiser.</h2>
             </S.TitleContainer>
 
             <Form />

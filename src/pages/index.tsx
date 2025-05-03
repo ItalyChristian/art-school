@@ -26,7 +26,7 @@ export default function Home() {
 
       <BannerContainer
         backgroundImage={background.src}
-        title="Estúdio de Atores Taylor Swift"
+        title="Estúdio de Arte Taylor Swift"
         textButton="Agendar uma audição"
         // onButtonClick={() => alert('Audição agendada!')}
       /> 

@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
- 
+type ButtonProps = {
+  width?: string;
+};
+
+export const Button = styled.button<ButtonProps>`
+  width: ${({ width }) => width || 'auto'};
+
   padding: 0.75rem 1.5rem;
 
   font-size: 1rem;

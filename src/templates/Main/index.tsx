@@ -7,11 +7,6 @@ export type MainProps = {
 
 export const Main = ({ children }: MainProps) => {
 
-//   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-//     event.preventDefault();
-//     window && window.scrollTo(0, 0);
-//   };
-
     return (
         <>
             <div>MENU</div>
@@ -20,8 +15,6 @@ export const Main = ({ children }: MainProps) => {
                 {children}
                 <footer></footer>
             </div>
-
-            {/* <GoTop handleClick={handleClick} /> */}
         </>
     );
 };

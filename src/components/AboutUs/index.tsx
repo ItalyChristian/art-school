@@ -13,7 +13,7 @@ export const AboutUs = () => {
 
             <ContainerThree
                 // image="https://static.wixstatic.com/media/e4f166_5bb6ef976a1e4980acde805e5220db88~mv2_d_4831_3490_s_4_2.jpg/v1/fill/w_535,h_752,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e4f166_5bb6ef976a1e4980acde805e5220db88~mv2_d_4831_3490_s_4_2.jpg"
-                text={"Sou um parágrafo. Você pode adicionar seu texto aqui. É fácil, clique em 'Editar texto' ou clique 2 vezes sobre mim para editar o conteúdo e mais. Você também pode me arrastar  e soltar em qualquer lugar da página. Sou um ótimo espaço para contar sua história e fazer com que os visitantes saibam um pouco mais sobre você. Use este espaço para escrever um texto longo sobre sua empresa e sobre os serviços que  você oferece. Conte aos visitantes a história de como você teve a ideia de criar essa empresa e o que o torna diferente de seus concorrentes. Você pode apresentar a sua equipe, seus projetos e metas. Faça com que a sua empresa se destaque e mostre aos visitantes quem você é. Clique em 'Editar texto' para começar."}
+                text={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
             />
         </S.Container>
     );

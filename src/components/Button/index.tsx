@@ -4,13 +4,13 @@ import * as S from './styles';
 export type ButtonProps = {
     textButton: string;
     onButtonClick?: () => void;
-    width?: any;
-    type?: any;
+    width?: string;
+    type?: 'button' | 'submit' | 'reset';
 }
 
 export const Button = ({ textButton, onButtonClick, width, type }: ButtonProps) => {
     return (
-        <S.Button type={type} onClick={onButtonClick}>{textButton}</S.Button>
+        <S.Button type={type} width={width} onClick={onButtonClick}>{textButton}</S.Button>
     );
 };
 
