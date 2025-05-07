@@ -4,7 +4,6 @@ type ContainerProps = {
   backgroundImage: string;
 };
 
-  
 export const Container = styled.div<ContainerProps>`
   height: 100vh;
 

@@ -3,11 +3,12 @@ import React from 'react';
 import * as S from './styles';
 import { ServicesCard } from '../ServicesCard';
 import { Button } from '../Button';
+import { Heading } from '../Heading';
 
 export const ServicesContainer = () => {
     return (
         <S.Container>
-            <S.Title>Preparação para a Atuação</S.Title>
+            <Heading as='h2' size='1.75rem'>Preparação para a Atuação</Heading>
 
             <ServicesCard
                 title="Workshop"

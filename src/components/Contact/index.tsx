@@ -2,6 +2,7 @@ import React from 'react';
 import * as S from './styles';
 
 import { Form } from '../Form';
+import { Heading } from '../Heading';
 
 export const Contact = () => {
     return (

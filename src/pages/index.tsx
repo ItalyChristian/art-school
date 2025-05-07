@@ -8,38 +8,25 @@ import { GoTop } from "../components/GoTop";
 import { Menu } from "../components/Menu";
 import { ServicesContainer } from "../components/ServicesContainer";
 import { WhereToFind } from "../components/WhereToFind";
+import { Main } from "../templates/Main";
 
 export default function Home() {
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-    event.preventDefault();
-    window && window.scrollTo(0, 0);
-  };
-
   return (
-    <>
-      <Menu
-        links={data.menuAttributes}
-      />
+    <Main children={
+      <>
+        <BannerContainer
+          backgroundImage={background.src}
+          title="Estúdio de Arte Taylor Swift"
+          textButton="Agendar uma audição"
+          // onButtonClick={() => alert('Audição agendada!')}
+        /> 
 
-      <BannerContainer
-        backgroundImage={background.src}
-        title="Estúdio de Arte Taylor Swift"
-        textButton="Agendar uma audição"
-        // onButtonClick={() => alert('Audição agendada!')}
-      /> 
-
-      <ServicesContainer />
-
-      <AboutUs />
-
-      <Contact />
-
-      <WhereToFind />
-
-      <Footer />
-
-      <GoTop handleClick={() => handleClick} />
-    </>
+        <ServicesContainer />
+        <AboutUs />
+        <Contact />
+        <WhereToFind />
+      </>
+    }/>
   );
 }

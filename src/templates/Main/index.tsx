@@ -1,5 +1,9 @@
-// import { GoTop } from '@/src/components/GoTop';
 import React from 'react';
+
+import data from "../../api/dataMock.json";
+import { Footer } from '@/src/components/Footer';
+import { GoTop } from '@/src/components/GoTop';
+import { Menu } from '@/src/components/Menu';
 
 export type MainProps = {
     children: React.ReactNode;
@@ -7,14 +11,17 @@ export type MainProps = {
 
 export const Main = ({ children }: MainProps) => {
 
+    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+        event.preventDefault();
+        window && window.scrollTo(0, 0);
+    };
+
     return (
         <>
-            <div>MENU</div>
-
-            <div>
+            <Menu links={data.menuAttributes} />
                 {children}
-                <footer></footer>
-            </div>
+            <Footer />
+            <GoTop handleClick={() => handleClick}/>
         </>
     );
 };

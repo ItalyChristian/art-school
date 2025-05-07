@@ -6,8 +6,3 @@ export const Container = styled.div`
 
   padding-top: 4rem;
 `;
-
-export const TitleContainer = styled.div`
-  padding-left: 4rem;
-`;
-

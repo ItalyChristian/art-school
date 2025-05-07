@@ -8,10 +8,6 @@ export const Container = styled.div`
   padding-top: 2rem;
 `;
 
-export const Title = styled.h2`
-  padding-left: 4rem;
-`;
-
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
