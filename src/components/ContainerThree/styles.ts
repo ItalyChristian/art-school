@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Container_Flex as Container_Flex } from '../../styles/globals';
 
 type ImageContainerProps = {
-  backgroundImage: string;
+  $backgroundImage: string;
 };
 
 export const Container = styled(Container_Flex)`
@@ -20,7 +20,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
   width: 350rem;
   height: 47rem;
 
-  background-image: url(${(props) => props.backgroundImage});
+  background-image: url(${(props) => props.$backgroundImage});
   background-size: cover;
   background-position: center;
 

@@ -11,9 +11,9 @@ export type LogoLinkProps = {
 
 export const MenuLogo = ({ text, srcImg = '', link }: LogoLinkProps) => {
     return (
-        <S.Container href={link}>
-          {!!srcImg && <Image src={srcImg} alt={text} />}
-          {!srcImg && text}
+      <S.Container href={link}>
+        {!!srcImg && <Image src={srcImg} alt={text} />}
+        {!srcImg && text}
       </S.Container>
     );
 };

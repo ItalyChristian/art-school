@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 
 import data from "../../api/dataMock.json";
 import { Footer } from '@/src/components/Footer';
@@ -11,17 +11,19 @@ export type MainProps = {
 
 export const Main = ({ children }: MainProps) => {
 
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    const handleClick = useCallback((event: React.MouseEvent<HTMLElement>) => {
         event.preventDefault();
-        window && window.scrollTo(0, 0);
-    };
+        if (typeof window !== 'undefined') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }, []);
 
     return (
         <>
             <Menu links={data.menuAttributes} />
                 {children}
             <Footer />
-            <GoTop handleClick={() => handleClick}/>
+            <GoTop handleClick={handleClick} />
         </>
     );
 };

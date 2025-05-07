@@ -10,6 +10,6 @@ export const Container = styled.div`
   }
 `;
 
-export const FirstItem = styled.a`
+export const FirstItem = styled.div`
   color: #fa6254;
 `;

@@ -10,7 +10,7 @@ export type ButtonProps = {
 
 export const Button = ({ textButton, onButtonClick, width, type }: ButtonProps) => {
     return (
-        <S.Button type={type} width={width} onClick={onButtonClick}>{textButton}</S.Button>
+        <S.Button type={type} $width={width} onClick={onButtonClick}>{textButton}</S.Button>
     );
 };
 

@@ -4,7 +4,7 @@ import * as S from './styles';
 import { IoIosArrowDropupCircle } from "react-icons/io";
 
 export type GoToProps = {
-  handleClick: ()=> void;
+  handleClick: any;
 };
 
 export const GoTop = ({ handleClick }: GoToProps) => {

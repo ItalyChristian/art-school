@@ -8,7 +8,7 @@ type TitleProps = {
  
 export const Title = styled.h1<TitleProps>`
   font-size: ${({ size }) => size || '1rem'};
-  text-transform: ${({ uppercase }) => uppercase ? 'uppercase' : 'unset'};
+  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'unset')};
   letter-spacing: 1rem;
 
   padding-left: ${({ padding }) => padding || '4rem'};

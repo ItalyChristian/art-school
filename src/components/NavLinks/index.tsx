@@ -13,14 +13,12 @@ export const NavLinks = ({ links = [] }: NavLinksProps) => {
     const [firstLink, ...restLinks] = links;
 
     return (
-        <>
-            <S.Container>
-                <S.FirstItem><MenuLink key={firstLink.id} {...firstLink} /></S.FirstItem>
-                
-                {restLinks.map((link) => (
+        <S.Container>
+            <S.FirstItem><MenuLink key={firstLink.id} {...firstLink} /></S.FirstItem>
+            
+            {restLinks.map((link) => (
                 <MenuLink key={link.id} {...link} />
-                ))}
-            </S.Container>
-        </>
+            ))}
+        </S.Container>
     );
 };

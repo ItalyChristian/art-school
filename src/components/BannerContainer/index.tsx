@@ -12,7 +12,7 @@ type BannerProps = {
 
 export const BannerContainer = ({ backgroundImage, title, textButton}: BannerProps) => {
     return (
-        <S.Container backgroundImage={backgroundImage}>
+        <S.Container $backgroundImage={backgroundImage}>
             <S.Content>
                 <S.Title>{title}</S.Title>
                 <Button textButton={textButton} />

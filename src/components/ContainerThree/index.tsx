@@ -11,7 +11,7 @@ export type ContainerThreeProps = {
 export const ContainerThree = ({ text, image  }: ContainerThreeProps) => {
     return (
         <S.Container>
-            <S.ImageContainer backgroundImage={image} />
+            <S.ImageContainer $backgroundImage={image} />
 
             <S.Content>
                 <S.Paragraph>{text}</S.Paragraph>

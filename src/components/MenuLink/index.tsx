@@ -12,11 +12,9 @@ export const MenuLink = ({ children, link, newTab }: MenuLinkProps) => {
   const target = newTab ? '_blank' : '_self';
 
   return (
-    <div>
-      <S.MenuLink href={link} target={target}>
-        {children}
-      </S.MenuLink>
-    </div>
+    <S.MenuLink href={link} target={target}>
+      {children}
+    </S.MenuLink>
   );
 };
 

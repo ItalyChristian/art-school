@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 type ContainerProps = {
-  backgroundImage: string;
+  $backgroundImage: string;
 };
 
 export const Container = styled.div<ContainerProps>`
@@ -14,7 +14,7 @@ export const Container = styled.div<ContainerProps>`
   position: relative;
 
   color: white;
-  background-image: url(${(props) => props.backgroundImage});
+  background-image: url(${(props) => props.$backgroundImage});
   background-size: cover;
   background-position: center;
 `;

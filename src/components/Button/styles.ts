@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 type ButtonProps = {
-  width?: string;
+  $width?: string;
 };
 
 export const Button = styled.button<ButtonProps>`
-  width: ${({ width }) => width || 'auto'};
+  width: ${({ $width }) => $width || 'auto'};
 
   padding: 0.75rem 1.5rem;
 

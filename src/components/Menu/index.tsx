@@ -26,7 +26,7 @@ export const Menu = ({ links }: MenuProps) => {
                         <IoCloseSharp />
                     </S.Button>
                 ) : (
-                    <S.Button visible={visible} onClick={() => setVisible(true)} aria-label="Abrir menu">
+                    <S.Button $visible={visible} onClick={() => setVisible(true)} aria-label="Abrir menu">
                         <IoMenu aria-label="Abrir menu" />
                     </S.Button>
                 )}
